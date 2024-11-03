@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# copy-to-clip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple project for copying text to your clipboard effortlessly.
 
-Currently, two official plugins are available:
+## Why?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Browser Autofill sucks. It's a pain to fill out forms, and often times it ruins what I entered manually.
 
-## Expanding the ESLint configuration
+2. As a keyboard heavy person, I would rely on keyboard shortcuts but that solution is not feasible when you have too many things to copy.
+3. Clipboard managers are great, but they're again too many clicks and I like to see things as per my own taste and hence Shadcn UI.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## How to Use (replace `pnpm` with `npm` as needed)
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository.
+2. Navigate into the directory.
+3. Run `pnpm install` (or `npm install` if you prefer).
+4. Modify the text in `text-items.json` to your liking.
+5. Start the development server with `pnpm dev`.
+6. Open your browser and go to `http://localhost:5173`.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Depending on your operating system, resize the window, pin it to a corner of your screen, and set it to 'Always on top' for easy access.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+I primarily use Ubuntu, and if you manage to get this working on your OS, feel free to contribute to this README!
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## How I use it
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+I keep this thing open in the background, and I use it to copy text to my clipboard. I've found it to be a lifesaver for me, and I hope it helps you too!
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please open an issue or submit a pull request.
