@@ -2,6 +2,8 @@
 
 A simple project for copying text to your clipboard effortlessly.
 
+![image](https://github.com/user-attachments/assets/73c1ae4f-820d-4e62-8d31-e3eb193ec4de)
+
 ## Why?
 
 1. Browser Autofill sucks. It's a pain to fill out forms, and often times it ruins what I entered manually.
